@@ -208,11 +208,21 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(score){
+  if (score >=90){
+    console.log ('you got an A');
+  } else if (score >= 80 && score <90 ){
+    console.log ('you got a B');
+  }else if (score >= 70 && score <80 ){
+    console.log ('you got a C'); 
+  }else if (score  >= 60 && score <70 ){
+    console.log ('you got a D');
+  }else if (score  < 60){
+    console.log ('you got an F');
   }
+}  
   
-  
+  console.log (grade(80))
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
