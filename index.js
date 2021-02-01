@@ -277,6 +277,14 @@ Using the vowelCounter function below do the following:
   HINT - you may need to study tomorrow's content on arrays 
   HINT - try looking up the .includes() method
 */
+function annoyingSong(startingNumber){
+ 
+  for(let startingNumber=5; startingNumber > 0; startingNumber--){
+   return `${startingNumber} bottles of soda on the wall, ${startingNumber} bottles of soda, take one down pass it around ${startingNumber-1} bottles of soda on the wall`
+}
+}
+console.log(annoyingSong(0))
+
 
 
 function vowelCounter(/*add your code here*/) {
