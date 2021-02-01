@@ -52,9 +52,9 @@ Do the following:
 */
 let num= '1999'
 
-parseInt(num) {
-console.log(num);
-}
+parseInt(num); {
+console.log(num)
+} 
 
 /*
 Task 1d - Multiply
@@ -119,7 +119,7 @@ function hungryDog(weight,age){
     console.log (weight*.05);
   } else if(weight >= 6 && age <= 10){
     console.log (weight*.04);
-  } else if(weight >= 11 && <= 15){
+  } else if(weight >= 11 && weight <= 15){
     console.log (weight*.03);
   } else if (weight > 15){
     console.log (weight*.03);
@@ -153,11 +153,41 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+
 function game(user, computer){
-    return Math.random(rock<=.333 && rock>0, paper > .333 && paper <=.667, scissors > .667 && scissors <=1)
-}
+  let computer= Math.random;
+    if(computer<=.333){
+      computer==='rock';
+   } else if(computer > .333 && computer <=.66);{
+    computer==='paper';
+   } else if (computer > .667);{
+   computer==='scissors';
+  }
   
-  console.log()
+    if(user === computer){
+      return "it's a tie";
+    }
+    else if (user === "rock" && computer === "paper"){
+      return "you lose";
+    }
+    else if (user === "rock" && computer === "scissors"){
+      return "you win";
+    }
+    else if (user === "paper" && computer === "rock"){
+      return "you win"; 
+    }
+    else if (user === "paper" && computer === "scissors"){
+      return "you lose";
+    }
+    else if (user === "scissors" && computer === "rock"){
+      return "you lose";
+    }
+    else if (user === "scissors" && computer === "paper"){
+      return "you win";
+    }  
+  }
+}
+  console.log(game)
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -200,8 +230,8 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(bottle){
+        for(let i=bottle; i>0; i--)
   }
 
 
