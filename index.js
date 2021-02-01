@@ -114,12 +114,24 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
-  }
+function hungryDog(weight,age){
+  if(weight <= 5){
+    console.log (weight*.05);
+  } else if(weight >= 6 && age <= 10){
+    console.log (weight*.04);
+  } else if(weight >= 11 && <= 15){
+    console.log (weight*.03);
+  } else if (weight > 15){
+    console.log (weight*.03);
+  } else if(age >= .16 && age <= .33){
+    console.log (weight*.1);
+  } else if(age >= .33 && age <= .583){
+    console.log (weight*.05);
+  } else if(age >= .583 && age <= 1){
+      console.log (weight*.1);
+}
 
-
-
+console.log(hungryDog(1,15))
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 // Rock, Paper, Scissors - Let's play against the computer!
@@ -142,10 +154,10 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    /*add your code here*/
+    return Math.random(rock<=.333 && rock>0, paper > .333 && paper <=.667, scissors > .667 && scissors <=1)
 }
   
-  
+  console.log()
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
